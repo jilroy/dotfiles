@@ -1,0 +1,28 @@
+[core]
+    editor = vim
+[push]
+	default = simple
+[alias]
+#    nice = log --date=format:'%d-%m-%Y %H:%M' --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cd)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	l = log --date=format:'%d-%m-%Y %H:%M' --graph --abbrev-commit --decorate --format=format:'%C(147)%h%C(reset) %C(115)(%cd)%C(reset) %C(253)%s%C(reset) %C(110)%an%C(reset)%C(220)%d%C(reset)' --all
+	b = branch -vva
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+    showbranch = auto
+	ui = true
+[color "branch"]
+	current = 220
+	local = 214
+	remote = cyan 
+	upstream = cyan
+[color "diff"]
+	meta = 220
+	frag = 117
+	old = 203
+	new = 049  
+[color "status"]
+	added = 049
+	changed = 205
+	untracked = red bold
